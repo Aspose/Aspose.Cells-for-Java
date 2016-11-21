@@ -6,20 +6,22 @@ import com.aspose.cells.examples.Utils;
 
 public class HtmlExportFrameScripts {
 
-    public static void main(String[] args) throws Exception {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(HtmlExportFrameScripts.class);
+	public static void main(String[] args) throws Exception {
 
-        // Open the required workbook to convert
-        Workbook w = new Workbook(dataDir + "Sample1.xlsx");
+		// The path to the documents directory.
+		String dataDir = Utils.getSharedDataDir(HtmlExportFrameScripts.class) + "articles/";
 
-        // Disable exporting frame scripts and document properties
-        HtmlSaveOptions options = new HtmlSaveOptions();
-        options.setExportFrameScriptsAndProperties(false);
+		// Open the required workbook to convert
+		Workbook w = new Workbook(dataDir + "Sample1.xlsx");
 
-        // Save workbook as HTML
-        w.save(dataDir + "output.html", options);
+		// Disable exporting frame scripts and document properties
+		HtmlSaveOptions options = new HtmlSaveOptions();
+		options.setExportFrameScriptsAndProperties(false);
 
-        System.out.println("File saved");
-    }
+		// Save workbook as HTML
+		w.save(dataDir + "HEFrameScripts_out.html", options);
+
+		System.out.println("File saved");
+
+	}
 }

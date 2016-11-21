@@ -6,8 +6,9 @@ import com.aspose.cells.examples.Utils;
 public class AssignMacroToFormControl {
 
     public static void main(String[] args) throws Exception {
+
         // The path to the documents directory.
-        String dataDir = Utils.getDataDir(AssignMacroToFormControl.class);
+        String dataDir = Utils.getSharedDataDir(AssignMacroToFormControl.class) + "articles/";
 
         Workbook workbook = new Workbook();
         Worksheet sheet = workbook.getWorksheets().get(0);
@@ -27,8 +28,9 @@ public class AssignMacroToFormControl {
 
         button.setMacroName(sheet.getName() + ".ShowMessage");
 
-        workbook.save(dataDir + "Output.xlsm");
+        workbook.save(dataDir + "AMToFControl_out.xlsm");
 
         System.out.println("File saved");
-    }
+
+	}
 }
