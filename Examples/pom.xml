@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>Examples</groupId>
   <artifactId>Examples</artifactId>
-  <version>26.10</version>
+  <version>26.11</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <resources>
@@ -35,23 +35,28 @@
     <dependency>
         <groupId>com.aspose</groupId>
         <artifactId>aspose-cells</artifactId>
-        <version>26.10</version>
+        <version>26.11</version>
     </dependency>
     <dependency>
         <groupId>com.aspose</groupId>
         <artifactId>aspose-cells</artifactId>
-        <version>26.10</version>
+        <version>26.11</version>
         <classifier>javadoc</classifier>
     </dependency>
     <dependency>
         <groupId>org.bouncycastle</groupId>
-        <artifactId>bcprov-jdk15on</artifactId>
-        <version>1.68</version>
+        <artifactId>bcprov-jdk15to18</artifactId>
+        <version>1.86</version>
     </dependency>
     <dependency>
         <groupId>org.bouncycastle</groupId>
-        <artifactId>bcpkix-jdk15on</artifactId>
-        <version>1.68</version>
-    </dependency>        
+        <artifactId>bcpkix-jdk15to18</artifactId>
+        <version>1.86</version>
+    </dependency>
+    <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcutil-jdk15to18</artifactId>
+        <version>1.86</version>
+    </dependency>         
 </dependencies>
 </project>
